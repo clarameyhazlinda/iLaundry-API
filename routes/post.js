@@ -85,6 +85,7 @@ router.post('/', async (req, res) => {
         res.status(200).json(result(1, 'Insert Post Success!'))
     } catch (error) {
         res.status(500), json(result(0, error.message))
+        console(error)
     }
 })
 
