@@ -96,8 +96,7 @@ router.put('/', async (req, res) => {
         nomor_hp: req.body.nomor_hp,
         jenis_barang: req.body.jenis_barang,
         jumlah_barang: req.body.jumlah_barang,
-        harga: req.body.harga,
-        user_id: req.body.user_id
+        harga: req.body.harga
     }
 
     try {
