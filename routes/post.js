@@ -32,7 +32,7 @@ router.get('/', async (req, res) => {
         },
         {
             $set: {
-                id: '$id',
+                id: '$_id',
                 username: {
                     $arrayElemAt: ['$userData.username', 0]
                 },
